@@ -1,0 +1,61 @@
+
+html {
+    background-color: #001;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #eef;
+    display: inline-block;
+    font-size: 3vw;
+    left: 50%;
+    position: absolute;
+    top: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.text-container > * {
+    animation: turn 5s ease-in;
+    display: inline-block;
+    font-family: sans-serif;
+    font-weight: normal;
+    letter-spacing: 3vw;
+    text-shadow: 0 0 .5rem #def;
+    text-transform: uppercase;
+    transform: scaleY(4);
+}
+
+@keyframes turn {
+    0% {
+        text-shadow: 0 0 0 #def;
+        transform: scaleY(4) rotateY(90deg);
+    }
+    100% {
+        text-shadow: 0 0 .5rem #def;
+        transform: scaleY(4) rotateY(0);
+    }
+}
+
+.fade-slide {
+    transition : opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    opacity : 1;
+    transform: translateY(0);
+}
+
+.fade--slide.out {
+    opacity: 0;
+    transform: translateY(-20px); /* 위로 살짝 이동하면서 사라짐 */
+}
+
+.fade-slide.in {
+    opacity: 1;
+    transform: translateY(20px); /* 아래에서 위로 올라오며 나타남 */
+}
+
+

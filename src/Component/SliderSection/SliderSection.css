@@ -1,0 +1,21 @@
+.promotion-section {
+    height: 70%;
+    width: 80%;
+    padding: 40px 30px;
+    background-color: grey;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.promotion-section h2 {
+    margin-bottom: 20px;
+}
+
+.promotion-section img {
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
