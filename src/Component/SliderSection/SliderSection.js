@@ -17,7 +17,7 @@ function SliderSection() {
 
   return (
       <div className="promotion-section">
-        <h2>NEW RELEASES</h2>
+        <h2>Result</h2>
         <Slider {...settings}>
           <a href="https://store.steampowered.com/app/2305840/Cat_Quest_III/">
           <div>

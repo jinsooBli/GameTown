@@ -25,12 +25,12 @@ function NavBar() {
       <div className={`header ${isScrolled ? 'show' : ''}`}>
         <nav className="navbar">
           <div className="navbar-logo">
-            <h3 className="navbar-text"><a href="#section1">GameTown</a></h3>
+            <h3 className="navbar-text"><a href="#section1">CodeTown</a></h3>
           </div>
           <ul className="navbar-links">
             {/*<li><a href="#section1">Main</a></li>*/}
-            <li><a href="#section2">Trending</a></li>
-            <li><a href="#section3">Releases</a></li>
+            <li><a href="#section2">Introduce</a></li>
+            <li><a href="#section3">Result</a></li>
           </ul>
         </nav>
       </div>

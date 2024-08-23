@@ -6,7 +6,7 @@ function Banner() {
   return (
       <div className="banner">
         <ReactPlayer style={{position: "relative"}}
-                     url={process.env.PUBLIC_URL + '/videos/GameView.mp4'}
+                     url={process.env.PUBLIC_URL + '/videos/'}
                      width="2000px"
                      height="2100px"
                      playing={true}
@@ -16,15 +16,16 @@ function Banner() {
         />
         <div className="bannerText">
           <div className="wrap">
-            <span className="text">G</span>
-            <span className="text">A</span>
-            <span className="text">M</span>
+            <span className="text">C</span>
+            <span className="text">O</span>
+            <span className="text">D</span>
             <span className="text">E</span>
             <span className="space"></span>
-            <span className="text">T</span>
-            <span className="text">O</span>
-            <span className="text">W</span>
-            <span className="text">N</span>
+            <span className="text">M</span>
+            <span className="text">A</span>
+            <span className="text">K</span>
+            <span className="text">E</span>
+            <span className="text">R</span>
           </div>
         </div>
       </div>

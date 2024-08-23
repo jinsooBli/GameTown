@@ -1,6 +1,7 @@
 import React, {useCallback, useState} from 'react';
 import './IntroduceSection.css';
 import Modal from 'react-modal';
+import {Link} from 'react-router-dom';
 
 /*
   TODO: 모달창 띄우게하고 모달창 스타일 정의하기
@@ -35,24 +36,24 @@ function IntroduceSection() {
   const products = [
     {
       id: 1,
-      name: 'Counter-Strike 2',
+      name: 'PARK JIN SOO',
       image: 'https://images.g2a.com/1024x576/1x1x1/counter-strike-global-offensive-prime-status-upgrade-pc-steam-account-account-global-i10000016291002/c0ae065107a74146939f89ec',
-      link: 'https://store.steampowered.com/app/730/CounterStrike_2/',
+      link: '/Introduce1',
       text: 'For over two decades, Counter-Strike has offered an elite competitive experience, one shaped by millions of players from across the globe. And now the next chapter in the CS story is about to begin. This is Counter-Strike 2.\n',
     },
     {
       id: 2,
-      name: 'Black Myth: Wukong',
+      name: 'PARK YOUNG CHAN',
       image: 'https://images.g2a.com/1024x576/1x1x1/black-myth-wukong-pc-steam-key-global-i10000506052003/18a4c8723a6d4aff90f32b10',
-      link: 'https://store.steampowered.com/app/2358720/Black_Myth_Wukong/',
+      link: '/Introduce2',
       text: 'Black Myth: Wukong is an action RPG rooted in Chinese mythology. The story is based on Journey to the West, one of the Four Great Classical Novels of Chinese literature. You shall set out as the Destined One to venture into the challenges and marvels ahead, to uncover the obscured truth beneath the veil of a glorious legend from the past.',
 
     },
     {
       id: 3,
-      name: 'READY OR NOT',
+      name: 'LIM DONG GYU',
       image: 'https://images.g2a.com/1024x576/1x1x1/ready-or-not-pc-steam-key-global-i10000280403002/8de5940b580847119bbef339',
-      link: 'https://store.steampowered.com/app/1144200/Ready_or_Not/',
+      link: '/Introduce3',
       text: 'Los Sueños – The LSPD reports a massive upsurge in violent crime across the greater Los Sueños area. Special Weapons and Tactics (SWAT) teams have been dispatched to respond to various scenes involving high-risk hostage situations, active bomb threats, barricaded suspects, and other criminal activities. Citizens are being advised to practice caution when traveling the city or to stay at home.',
     },
     // ...더 많은 데이터 추가 가능
@@ -113,8 +114,7 @@ function IntroduceSection() {
             />
             <p>
               <p>{modalProduct.text}</p>
-              <a href={modalProduct.link} target="_blank"
-                 rel="noopener noreferrer">Go to Game Page</a>
+              <Link to={modalProduct.link}>Go to Info Page</Link>
               <button
                   onClick={closeModal}
 
